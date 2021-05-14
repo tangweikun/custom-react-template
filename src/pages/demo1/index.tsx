@@ -1,3 +1,5 @@
+import styles from './index.module.scss';
+
 export default function Demo1() {
-  return <div>Demo1</div>;
+  return <div className={styles.wrapper}>Demo1</div>;
 }
