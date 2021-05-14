@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css';
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import 'antd/dist/antd.less'; // or 'antd/dist/antd.less'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

@@ -46,7 +46,6 @@
     "jest-resolve": "26.6.0",
     "jest-watch-typeahead": "0.6.1",
     "mini-css-extract-plugin": "0.11.3",
-    "normalize.css": "^8.0.1",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.2.1",
@@ -162,6 +161,8 @@
   },
   "devDependencies": {
     "husky": "^6.0.0",
+    "less": "^4.1.1",
+    "less-loader": "6.2.0",
     "node-sass": "^4.14.1",
     "prettier": "^2.3.0",
     "pretty-quick": "^3.1.0"
