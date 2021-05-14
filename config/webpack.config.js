@@ -24,8 +24,10 @@ const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-
+const { getLessTheme, themeColor } = require('./theme');
 const postcssNormalize = require('postcss-normalize');
+
+const lessVariables = getLessTheme(themeColor);
 
 const appPackageJson = require(paths.appPackageJson);
 
@@ -489,7 +491,7 @@ module.exports = function (webpackEnv) {
                 {
                   sourceMap: true,
                   lessOptions: {
-                    modifyVars: {},
+                    modifyVars: lessVariables,
                     javascriptEnabled: true,
                   },
                 },
